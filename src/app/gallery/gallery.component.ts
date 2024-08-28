@@ -15,10 +15,10 @@ export class GalleryComponent implements OnInit {
     private modalService: NgbModal,
     private _lightbox: Lightbox
   ) {
-    for (let i = 1; i <= 6; i++) {
-      const src = 'assets/img/western/' + i + '.jpg';
+    for (let i = 1; i <= 12; i++) {
+      const src = 'assets/img/sattva/gallery' + i + '.webp';
       const caption = 'Image ' + i + ' caption here';
-      const thumb = 'assets/img/western/' + i + '.jpg';
+      const thumb = 'assets/img/sattva/gallery' + i + '.webp';
       const album = { src: src, caption: caption, thumb: thumb };
       this._album.push(album);
     }

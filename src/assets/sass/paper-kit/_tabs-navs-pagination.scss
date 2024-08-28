@@ -21,19 +21,22 @@
 .nav-tabs {
         font-size: $font-size-medium;
         font-weight: $font-weight-bold;
-        border-bottom: 1px solid #F1EAE0;
+        border-bottom: 0 !important ;
         margin-bottom: 30px;
         .nav-item{
             .nav-link{
                 border: 0 none;
-                color: $other-medium-gray;
+                color: #ffffff;
                 background-color: transparent;
+                font-weight: bold;
             }
             .nav-link:hover{
                 color: $font-color;
             }
             .nav-link.active{
-                color: $font-color;
+                color: #ffffff;
+                font-size: xx-large;
+                font-weight: bold;
             }
         }
 

@@ -19,7 +19,7 @@ export class LocationComponent implements OnInit {
   ipAddress:any;
   IpAddress:any=this.getIp();
   public myForm:UntypedFormGroup|any;
-  @Input() user:User={name:'',email:'',phone:'',url:'Western Marina'};
+  @Input() user:User={name:'',email:'',phone:'',url:'Sattva Lakeridge'};
   constructor(private modalService: NgbModal,private http:HttpClient,private userService: UserService,private ipAdd:IpServiceService,private formbuilder:UntypedFormBuilder) { 
 this.Createform();
   }

@@ -21,9 +21,10 @@
 }
 
 .tim-title {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 25px;
     min-height: 32px;
+    padding-top: 30px;
 }
 
 .tim-title.text-center {
@@ -97,13 +98,13 @@
     /*     position: relative; */
 }
 
-.navigation-example {
+/* .navigation-example {
     background-image: url('../img/ilya-yakover.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
-}
+} */
 
 #notifications {
     background-color: #FFFFFF;
@@ -1373,13 +1374,13 @@ pre.prettyprint {
     }
 }
 .fimage{
-    width:600px !important;
-    margin-left: -240px;
+    width:260px !important;
+    margin-left: -96px;
 }
 @media only screen and (max-width: 768px){
     .fimage{
-        width:265px !important;
-        margin-left: -108%;
+        width:324px !important;
+        margin-left: -144%;
     }
 }
 

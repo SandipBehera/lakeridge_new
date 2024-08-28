@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { LightboxModule } from 'ngx-lightbox';
+import { PriceComponent } from './price/price.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { LightboxModule } from 'ngx-lightbox';
     LocationComponent,
     FooterComponent,
     ThankyouComponent,
+    PriceComponent,
    
   ],
   imports: [

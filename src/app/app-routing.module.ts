@@ -6,21 +6,21 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { LocationComponent } from './location/location.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { PriceComponent } from './price/price.component';
 
 const routes: Routes = [
-  {path: '',redirectTo:'home',pathMatch:'full'},
-  {path:'home',component:BannerComponent},
-  {path:'about',component:AboutComponent},
-  {path:'Pricing',component:PricingComponent},
-  {path:'Amenities',component:PricingComponent},
-  {path:'gallery',component:GalleryComponent},
-  {path:'floor',component:GalleryComponent},
-  {path:'location',component:LocationComponent},
-  {path:'thankyou',component:ThankyouComponent}
+  { path: '', component: BannerComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'Pricing', component: PriceComponent },
+  { path: 'amenities', component: PricingComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'floor', component: GalleryComponent },
+  { path: 'location', component: LocationComponent },
+  { path: 'thankyou', component: ThankyouComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

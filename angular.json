@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "western-marina": {
+    "sattva-lakeridge": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/western-marina",
+            "outputPath": "dist/sattva-lakeridge",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "western-marina:build:production"
+              "browserTarget": "sattva-lakeridge:build:production"
             },
             "development": {
-              "browserTarget": "western-marina:build:development"
+              "browserTarget": "sattva-lakeridge:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "western-marina:build"
+            "browserTarget": "sattva-lakeridge:build"
           }
         },
         "test": {
