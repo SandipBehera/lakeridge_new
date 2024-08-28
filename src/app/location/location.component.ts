@@ -42,7 +42,7 @@ this.Createform();
   ngOnInit(): void {
   }
   getIp():void{
-    this.http.get('https://www.keyonprop.com/api/getIp').subscribe((res:any)=>{
+    this.http.get('https://app.keyonprop.com/api/getIp').subscribe((res:any)=>{
       return this.ipAddress = res.message;  
     });
   }

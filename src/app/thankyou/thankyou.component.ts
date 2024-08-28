@@ -10,6 +10,11 @@ export class ThankyouComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      window.location.href = '/';
+    }
+    , 3000
+    );
   }
 
 }
