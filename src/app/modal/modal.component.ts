@@ -21,7 +21,7 @@ export class ModalComponent implements OnInit {
   ipAddress:any;
   IpAddress:any=this.getIp();
   myForm:UntypedFormGroup|any;
-  @Input() user:User={name:'',email:'',phone:'', url:'Western Marina'};
+  @Input() user:User={name:'',email:'',phone:'', url:'Sattva Lakeridge'};
   constructor( private http:HttpClient,private userService: UserService,public activeModal: NgbActiveModal,public location:Location,private ipAdd:IpServiceService,private formbuilder:UntypedFormBuilder) {
     this.Createform();
    }
@@ -33,7 +33,7 @@ export class ModalComponent implements OnInit {
       Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
     ])],
     phone:['',[Validators.required,Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
-    url:'Western Marina'
+    url:'Sattva Lakeridge'
   })
  }
   
@@ -54,7 +54,7 @@ export class ModalComponent implements OnInit {
   }
   
   getIp():void{
-    this.http.get('https://www.keyonprop.com/api/getIp').subscribe((res:any)=>{
+    this.http.get('https://app.keyonprop.com/api/getIp').subscribe((res:any)=>{
       return this.ipAddress = res.message;  
     });
   }
