@@ -21,7 +21,7 @@ export class ModalComponent implements OnInit {
   ipAddress:any;
   IpAddress:any=this.getIp();
   myForm:UntypedFormGroup|any;
-  @Input() user:User={name:'',email:'',phone:'', url:'Sattva Lakeridge'};
+  @Input() user:User={name:'',email:'',phone:'', projectName:'Sattva Lakeridge'};
   constructor( private http:HttpClient,private userService: UserService,public activeModal: NgbActiveModal,public location:Location,private ipAdd:IpServiceService,private formbuilder:UntypedFormBuilder) {
     this.Createform();
    }
