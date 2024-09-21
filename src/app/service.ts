@@ -13,7 +13,7 @@ export class UserService{
 
   constructor(private http: HttpClient){ }
   formSubmit(user:User){
-    return this.http.post(this.userUrl+ '/website_quires' ,user,httpOPtions);
+    return this.http.post(this.userUrl ,user,httpOPtions);
   }
   
 }
