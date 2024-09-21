@@ -9,7 +9,7 @@ const httpOPtions = {
 
 @Injectable({providedIn: 'root'})
 export class UserService{
-  private userUrl='https://app.keyonprop.com/api'; //after upload in the Server Change it to server url
+  private userUrl='https://im1wtcld8l.execute-api.us-west-2.amazonaws.com/default/LeadStorw'; //after upload in the Server Change it to server url
 
   constructor(private http: HttpClient){ }
   formSubmit(user:User){
