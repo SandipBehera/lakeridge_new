@@ -4,6 +4,6 @@ export class User{
     name: any;
     phone: any;
     email: any;
-    url:any;
+    projectName:any;
 
   }
