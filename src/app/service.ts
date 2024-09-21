@@ -4,7 +4,7 @@ import {Observable,of} from 'rxjs';
 import {catchError,map,tap} from 'rxjs/operators';
 import {User} from './user';
 const httpOPtions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({ 'content-type': 'application/json' })
 };
 
 @Injectable({providedIn: 'root'})
