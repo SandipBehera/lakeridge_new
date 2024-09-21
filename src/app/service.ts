@@ -10,7 +10,7 @@ const httpOptions = {
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
-  private userUrl = 'https://wf0gc9gyr4.execute-api.us-west-2.amazonaws.com/default/LeadStorw'; // Change to the server URL after upload
+  private userUrl = 'https://ycb1sb6t8e.execute-api.us-west-2.amazonaws.com/default/LeadStorw'; // Change to the server URL after upload
 
   constructor(private http: HttpClient) {}
 
